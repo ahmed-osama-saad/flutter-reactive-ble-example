@@ -4,8 +4,8 @@ PODS:
   - reactive_ble_mobile (0.0.1):
     - Flutter
     - Protobuf (~> 3.5)
-    - SwiftProtobuf (~> 1.0)
-  - SwiftProtobuf (1.17.0)
+    - SwiftProtobufAlias (~> 1.0)
+  - SwiftProtobufAlias (1.17.0)
 
 DEPENDENCIES:
   - Flutter (from `Flutter`)
@@ -14,7 +14,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Protobuf
-    - SwiftProtobuf
+    - SwiftProtobufAlias
 
 EXTERNAL SOURCES:
   Flutter:
@@ -26,7 +26,7 @@ SPEC CHECKSUMS:
   Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
   Protobuf: 1a37ebea1338949e9ac35a3f06e80b3f536eec8d
   reactive_ble_mobile: 9ce6723d37ccf701dbffd202d487f23f5de03b4c
-  SwiftProtobuf: 9c85136c6ba74b0a1b84279dbf0f6db8efb714e0
+  SwiftProtobufAlias: 9c85136c6ba74b0a1b84279dbf0f6db8efb714e0
 
 PODFILE CHECKSUM: ef19549a9bc3046e7bb7d2fab4d021637c0c58a3
 

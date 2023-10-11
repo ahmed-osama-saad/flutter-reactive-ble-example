@@ -1,9 +1,9 @@
-import SwiftProtobuf
+import SwiftProtobufAlias
 
 typealias PlatformMethodCompletionHandler = (PlatformMethodResult) -> Void
 
 enum PlatformMethodResult {
-    case success(SwiftProtobuf.Message?)
+    case success(SwiftProtobufAlias.Message?)
     case failure(FlutterError)
 }
 
@@ -19,7 +19,7 @@ struct AnyPlatformMethod<Context> {
         self.body = { context, args, completion in base.call(in: context, arguments: args, completion: completion) }
     }
 
-    init<Args: SwiftProtobuf.Message>(_ base: UnaryPlatformMethod<Context, Args>) {
+    init<Args: SwiftProtobufAlias.Message>(_ base: UnaryPlatformMethod<Context, Args>) {
         self.name = base.name
         self.body = { context, args, completion in base.call(in: context, arguments: args, completion: completion) }
     }
@@ -68,7 +68,7 @@ struct NullaryPlatformMethod<Context> {
     }
 }
 
-struct UnaryPlatformMethod<Context, Args: SwiftProtobuf.Message> {
+struct UnaryPlatformMethod<Context, Args: SwiftProtobufAlias.Message> {
 
     typealias Body = (String, Context, Args, @escaping PlatformMethodCompletionHandler) -> Void
 
